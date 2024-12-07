@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6d3f9d 0%, #284679 100%);
+            background-size: cover;
+            color: white;
+        }
+        .navbar {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      text-align: right;
+    }
+    .navbar a{
+        margin-left: 20px;
+        color: aliceblue;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 15px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #a29bfe;
+    }
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            color: #333;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="tools.html">Tools</a>
+        <a href="projects.html">Projects</a>
+        <a href="let's talk.html">Let's Talk</a>
+    </nav>
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <section>
+        <div class="content">
+            <h2>Hello, I'm [Niranjana K S]</h2>
+            <h3> Frontend Developer</h3>
+            
+            <p>
+               I am a motivated learner of HTML,CSS, and Javascript 
+               with expertise in leveraging React and Bootstrap to create
+               responsive web application.I’m eager to contibute to 
+               front-end development projects and am always honing 
+               my craft to produce top-notch work.
+
+            </p>
+            
+        </div>
+    </section>
+</body>
+</html>

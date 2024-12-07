@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Section with Buttons</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6d3f9d, #284679);
+      color: white;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      text-align: right;
+    }
+    .navbar a{
+        margin-left: 20px;
+        color: aliceblue;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 15px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #a29bfe;
+    }
+
+    section {
+      width: 100%;
+      min-height: 100vh;
+      padding: 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .contact-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-item h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-item p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #6d3f9d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #4e2970;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tools.html">Tools</a>
+      <a href="projects.html">Projects</a>
+      <a href="let's talk.html">Let's Talk</a>
+  </nav>
+  <section id="contact">
+    <h2>Let's Talk</h2>
+    <p>Let's bring your vision to life. Drop me a message, and together we’ll turn ideas into action!</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <h3>Email</h3>
+        <p>niranjanakannan2005@gmail.com</p>
+        <a href="mailto:niranjanakannan2005@gmail.com" class="button">Send an Email</a>
+      </div>
+      <div class="contact-item">
+        <h3>LinkedIn</h3>
+        <p>linkedin.com/in/niranjanaks</p>
+        <a href="https://www.linkedin.com/in/niranjana-kannan-ks" target="_blank" class="button">Visit LinkedIn</a>
+      </div>
+      <div class="contact-item">
+        <h3>GitHub</h3>
+        <p>github.com/niranjanaks</p>
+        <a href="https://github.com/NiranjanaKS" target="_blank" class="button">Visit GitHub</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
